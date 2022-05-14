@@ -5,7 +5,7 @@ pipeline {
       stage('Build Artifact') {
             steps {
               sh "mvn clean package -DskipTests=true"
-              archive 'target/*.jar' //so  can be downloaded later
+              archive 'target/*.jar' //so  vikas can be downloaded later
             }
         }
       stage ('Unit Test'){
